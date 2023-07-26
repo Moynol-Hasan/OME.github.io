@@ -15,13 +15,13 @@ Languages used: HTML, CSS, JavaScript, Php.
 
 How to run the application:
 
-First I need to open xampp and need to turn on Apache and MySQL.
-Then I need to create a database in phpmyadmin.
-I named the database 'test' and the table name 'signup'. The database consists of 4 columns. Which are name, email, password, and confirm_Passowrd. And I used unique constraints in email.
+First need to open xampp and need to turn on Apache and MySQL.
+Then need to create a database in phpmyadmin.
+Then name the database 'test' and the table name 'signup'. The database consists of 4 columns. Which are name, email, password, and confirm_Passowr. Here email use as unique constraints.
 
-I need to store my file in local disk->Xampp->htdocs
-Then I come to my browser and search for localhost/'folder name'
+Then need to store the files in local disk -> Xampp -> htdocs folder
+Then go to any browser and search for localhost/'folder name'
 
-Then I need to signup first if I'm not registered. After the registration, I come to the sign-in page and then I use my email and password to log in. After login, it will take me to the next page which is khoj the search page. On this page first I input some values then in the next step, I search for a value. If the value is found then the output show true else it shows false.
+Then you need to signup first if you're not registered. After the registration, come to the sign-in page and then use email and password to log in. After login, it will take to the next page which is khoj the search page. On this page first input some values then in the next step, search for a value. If the value is found then the output show true else it shows false.
 
 # OME.github.io
