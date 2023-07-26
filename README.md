@@ -1,6 +1,6 @@
 Project Tittle: Ami Coding Pari Na
 
-Description: In this project, the user needs to log in first. If the user is not registered then he/she needs to register first. After logging in, the user enters some values as input then again user enters a value for searching. If that value is present in the values entered by the user, the output would be true; otherwise, it would be false.
+Description: In this project, the user needs to log in first. If the user is not registered then he/she needs to register first. After logging in, the user enters some values as input then again user enters a value for searching. If that value is present in the values entered by the user, the output would be true otherwise, it would be false.
 
 Features:
 On the front page, there are 2 features. One is login and the other one is signup. If a user is not already registered, he or she must first register by providing a name, email address, password, and confirm password. These details are kept in the phpMyAdmin database. After completing registration, users can log in to the next phase. In the login phase, the user needs to enter email and password to log in.
