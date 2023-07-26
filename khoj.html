@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"content="width=device-width,initial-scale=1.0">
+   <title>Khoj The Search</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+   <!-- container div -->
+   <div class="container">
+
+      <div class="slider1"></div>
+      <div class="btn1">
+         <button class="khoj">Khoj The Search</button>
+      </div>
+
+       <!-- Form section -->
+
+   <form name="bin_search">
+      <div class="Search-box">
+       <input type="text" id="ome" class="email ele" placeholder="Enter your values" name="values" required="">
+      <input type="text" id ="ome1" class="password ele" placeholder="Number you want to search" name="val" required="">
+      <input type="button" class="password ele" name="find">
+      <input type="button" class="clkbtn1" value="Search" onclick="result()">
+      </div>
+   </form>
+
+   <script type="text/javascript">
+      function result()
+      {
+         var find_val,all_val;
+
+         var s=document.bin_search.values.value; // Take the user input values as string 
+
+         target = Number(document.bin_search.val.value); // store user search value in target.
+
+
+ 
+ // In this segment I convert the string into numbers. And then stored the value in an array.
+
+var n = s.length;
+var i = 0;
+var cur_num = "";
+const arr = [];
+while (i < n) {
+  if (0 <= s[i] - '0' && s[i] - '0' <= 9) {
+    cur_num += s[i];
+  } else {
+    if (cur_num != "") {
+      arr.push(Number(cur_num));
+    }
+    cur_num = "";
+  }
+  i++;
+}
+
+if (cur_num != "") {
+  arr.push(Number(cur_num));
+}
+
+arr.sort(function(a, b){return b-a}); // Here I sort the array in descending order.
+
+
+// In this segment I used binary search to seach the value user want.
+
+  let start = 0,found=0;
+  let end = arr.length - 1;
+  while (start <= end) {
+    let middle = Math.floor((start + end) / 2);
+    if (arr[middle] < target) {
+       end = middle - 1;
+    } else if (arr[middle] > target) {
+      start = middle + 1;
+    } else if (arr[middle] === target) {
+      found=1;
+      break;
+    }
+  }
+
+        var str1="True";
+         var str2="False";
+
+        if(found===1)document.bin_search.find.value=str1; // If the value found then it shows true 
+         else document.bin_search.find.value=str2;   // If the value not found then it show false.
+}
+   </script>
+
+
+</body>
+</html>
+
+
+
+
+
